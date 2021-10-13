@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>img\basket.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -107,10 +110,7 @@
     <Resource Include="img\9_lakers.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Image2.png" />
+    <Resource Include="img\basket.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

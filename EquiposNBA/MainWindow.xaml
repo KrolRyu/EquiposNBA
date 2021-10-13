@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EquiposNBA"
         mc:Ignorable="d"
-        Title="Equipos NBA" Height="450" Width="850">
-    <StackPanel Height="420" Width="800">
-        <Border Margin="10" BorderBrush="Black" BorderThickness="3" CornerRadius="3">
+        Title="Equipos NBA" Height="450" Width="740"
+        Icon="img/basket.ico">
+    <StackPanel HorizontalAlignment="Stretch">
+        <Border Margin="10" BorderBrush="Black" BorderThickness="3" CornerRadius="3" HorizontalAlignment="Stretch">
             <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF8B00FF" Offset="0"/>
                     <GradientStop Color="#FFE7F749" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <StackPanel>
-                <TextBlock Text="Los Ángeles Lakers" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"></TextBlock>
-                <WrapPanel Height="137" VerticalAlignment="Bottom" HorizontalAlignment="Right"  Width="700">
-                    <Image Source="img/9_lakers.png"   Height="100" />
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                <TextBlock Text="Los Ángeles Lakers" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" TextWrapping="Wrap"></TextBlock>
+                <WrapPanel>
+                    <Image Source="img/9_lakers.png"  Height="100" />
                     <Image Source="img/14_lakers.png" Height="100" />
                     <Image Source="img/23_lakers.png" Height="100" />
                     <Image Source="img/3_lakers.png"  Height="100" />
@@ -32,7 +33,15 @@
                     <GradientStop Color="#FFC72727" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <StackPanel Height="150">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                <TextBlock Text="Miami Heat" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="White" TextWrapping="Wrap"></TextBlock>
+                <WrapPanel >
+                    <Image Source="img/7_heat.png"  Height="100" />
+                    <Image Source="img/14_heat.png" Height="100" />
+                    <Image Source="img/22_heat.png" Height="100" />
+                    <Image Source="img/99_heat.png" Height="100" />
+                    <Image Source="img/13_heat.png" Height="100" />
+                </WrapPanel>
             </StackPanel>
         </Border>
     </StackPanel>
